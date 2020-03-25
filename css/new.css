@@ -1,0 +1,39 @@
+button {
+    height: 40px;
+    width: 40px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 50%;
+    border: 1px solid #1D9AF2;
+    opacity: 1;
+    animation: spinner4 800ms linear infinite;
+    }
+    @keyframes spinner4 {
+    to {
+    transform: scale(1.5);
+    opacity: 0;
+    }
+    }
+
+
+    @keyframes big {
+        from {
+            width: 0px;
+            height: 0px;
+        }
+        to {
+            width: 150px;
+            height: 150px;
+        }
+    }
+    div#jb {
+        margin: 30px auto;
+        background-color: orange;
+        animation-name: big;
+        animation-duration: 4s;
+        animation-timing-function: linear;
+        animation-delay: 0s;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+        animation-play-state: running;
+    }
